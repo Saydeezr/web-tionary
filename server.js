@@ -19,7 +19,7 @@ app.set('view engine', 'handlebars');
 app.use(express.json());     
 app.use(express.urlencoded({ extended: true })); //Dont know whether to put true or false
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('./routes'));
+app.use(require('./controllers'));
 
 //starts server to listen on port
 sequelize.sync({ force: false }).then (() => {
