@@ -1,10 +1,11 @@
 // Dependencies
+const path = require('path');
 const express = require('express');
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
-const hbs = exphbs.create({});
-const path = require('path');
+const hbs = exphbs.create({ helpers });
+
 
 //Express run
 const app = express();
@@ -16,7 +17,7 @@ app.set('view engine', 'handlebars');
 
 //middleware
 app.use(express.json());     
-app.use(express.urlencoded({ extended: false })); //Dont know whether to put true or false
+app.use(express.urlencoded({ extended: true })); //Dont know whether to put true or false
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./routes'));
 
