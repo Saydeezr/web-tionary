@@ -1,0 +1,10 @@
+<div class="row mb-4 dashboard">
+    <h1>Dashboard</h1>
+    {{#each blog}}
+      <div class="post">
+        <h2>{{ blog.title }}</h2>
+        <p>{{ blog.message }}</p>
+        <p>Created on {{ blog.date_created }} by {{ user.username }}</p>
+      </div>
+    {{/each}}
+</div>
