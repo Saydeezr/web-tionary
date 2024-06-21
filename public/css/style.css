@@ -1,3 +1,27 @@
-.homepage{
-    background-color: aliceblue;
+body {
+    background-image: url(../images/web-tionary\ photo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.card {
+    height: 250px;
+    padding: 30px;
+    margin: 40px auto 40px auto;
+}
+
+.card-title {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card-btn{
+    background-color: rgb(73, 73, 73);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px;
+    font-weight: bold;
 }
