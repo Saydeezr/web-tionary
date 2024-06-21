@@ -17,7 +17,7 @@ app.set('view engine', 'handlebars');
 
 //middleware
 app.use(express.json());     
-app.use(express.urlencoded({ extended: true })); //Dont know whether to put true or false
+app.use(express.urlencoded({ extended: true })); 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./controllers'));
 
