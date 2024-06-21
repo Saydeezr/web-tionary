@@ -12,6 +12,13 @@ const hbs = exphbs.create({ helpers });
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+//Sessions setup
+app.use(session({
+    secret: 'Super secret secret',
+    resave: false,
+    saveUninitialized: true
+}));
+
 //Handlebars run
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
