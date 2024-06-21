@@ -21,7 +21,11 @@ body {
     background-color: rgb(73, 73, 73);
     color: white;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 10px;
     margin: 10px;
     font-weight: bold;
+}
+
+.formContainer {
+    background-color: blue;
 }
