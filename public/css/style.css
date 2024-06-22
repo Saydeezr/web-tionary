@@ -7,7 +7,7 @@ body {
 
 
 .card {
-    height: 250px;
+    height: 300px;
     padding: 30px;
     margin: 40px auto 40px auto;
 }
@@ -18,8 +18,9 @@ body {
 }
 
 .card-btn{
-    background-color: rgb(73, 73, 73);
+    background-color: #316FF6;
     color: white;
+    border-color: #316FF6;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
@@ -37,4 +38,18 @@ body {
     margin: 15px;
     margin-left: 25px;
     padding: 25px;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 75%;
+}
+
+.post{
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 75%;
 }
