@@ -13,17 +13,24 @@ body {
 }
 
 .card-title {
-    font-weight: 500;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.card-text{
+    margin:20px;
 }
 
 .card-btn{
     background-color: #316FF6;
+    text-decoration: none;
     color: white;
     border-color: #316FF6;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
+    margin-top: 20px;
     font-weight: bold;
 }
 
