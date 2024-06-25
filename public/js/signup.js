@@ -6,7 +6,7 @@ const signup = (event) => {
 
     if(!username || !password) {
         const errorMsg = document.querySelector('#error');
-        errorMsg.textContent = "All fields are required";
+        errorMsg.textContent = "All fields are required";   
         return;
     }
     if(username && password) {
@@ -19,16 +19,12 @@ const signup = (event) => {
         .then(response => {
             console.log(response)
             if(response.ok){
-                return response.json()
+                // return response.json()
+                document.location.replace('/dashboard')
             } else {
                 alert(response.statusText);
             }
         })
-        .then(data => {
-            console.log('Data', data)
-            window.localStorage.setItem('data', JSON.stringify(data))
-            document.location.replace('dashboard')
-          })
-}}
+}};
 
-document.querySelector('.signupBtn').addEventListener('click', signup);
+document.querySelector('.signupForm').addEventListener('submit', signup);

@@ -1,22 +1,23 @@
 <div class="row mb-4 dashboard">
     <h1 class="title">Dashboard</h1>
-    <div class="container">
+    <form class="container" id="postForm">
       <h3>Create New Post</h3>
       <div class="mb-3">
         <label for="createPost" class="form-label">Title of Post:</label>
+        <div class="error"></div>
         <input type="name" class="form-control" id="title">
     </div>
     <div class="mb-3">
         <label for="postContent" class="form-label">Message:</label>
         <textarea class="form-control" id="content" rows="3"></textarea>
     </div>
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Post</button>
     </div>
+    </form>
     <br>
-    {{#each blog}}
-      <div class="post">
-        <h2>{{ blog.title }}</h2>
-        <p>{{ blog.message }}</p>
-        <p>Created on {{ blog.date_created }} by {{ user.username }}</p>
+    <div class="blog-container">
       </div>
-    {{/each}}
+    </div>
 </div>
+<script src="/js/post.js"></script>
